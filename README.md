@@ -1,5 +1,5 @@
 # spriteHover.lua
-Simple library for testing mouse over in Love2D. It takes into account, not only the sprite, but also it's alpha channel. Simply set the sprite information as parameters (detailed in the README file), and it will return a true or false value. 
+Simple library for testing mouse over in Love2D. It takes into account not only the sprite, but also it's alpha channel. Simply set the sprite information as parameters (detailed in the README file), and it will return a true or false value. 
 
 ### USAGE
 
