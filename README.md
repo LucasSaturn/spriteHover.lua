@@ -1,5 +1,5 @@
 # spriteHover.lua
-Simple library for testing mouse over in Love2D. Simply set the sprite information as parameters (detailed in the README file), and it will return a true or false value. 
+Simple library for testing mouse over in Love2D. It takes into account, the sprite and it's alpha channel. Simply set the sprite information as parameters (detailed in the README file), and it will return a true or false value. 
 
 ### USAGE
 
@@ -20,3 +20,11 @@ Parameters:
 *	spriteImageData, contains the pixel data, declared by `love.image.newImageData()
 *	scaleX, X scale of the sprite on screen
 *	scaleY, Y scale of the sprite on screen
+
+### Actually implementing it within a program
+
+You must add this script as a reference, and then place the test function in your code.
+
+```require "location/spriteHover"```
+
+The easiest way to handle other objects overlapping, is to test within the `love.draw()` function, and test each object. Then, the variable will be overwritten with a different object if the one you are testing for has a different sprite overlapping.
