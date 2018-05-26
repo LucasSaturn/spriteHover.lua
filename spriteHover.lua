@@ -11,15 +11,16 @@ function testMouseOver(spriteX,spriteY,spriteImageData,scaleX,scaleY)
 		localX,localY = (x-spriteX)/scaleX, (y-spriteY)/scaleY
 		--at the current mouse position, is there a pixel in the texture?
 		r,g,b,a = spriteImageData:getPixel(localX,localY)
-
+	
 		--if it is transparent then
 		if(a==0) then
-			--return true
+			return false
+		else 
 			return true
 		end
 	end
 
 	--if the mouse isn't over, or the alpha doesn't exist
 	--return false
-	return false 
+	return false
 end
