@@ -17,7 +17,7 @@ Parameters:
 
 *	spriteX, X position of the sprite on screen
 *	spriteY, Y position of the sprite on screen
-*	spriteImageData, contains the pixel data, declared by `love.image.newImageData()
+*	spriteImageData, contains the pixel data, declared by `love.image.newImageData()`
 *	scaleX, X scale of the sprite on screen
 *	scaleY, Y scale of the sprite on screen
 
